@@ -13,7 +13,16 @@ const countSumOfTwoRepresentations = (n, l, r) => {
     return result; // 1
 };
 
-/*
-    T14(r) = 1 + 3r(4+8+1) + 1
-    O(r) = r
-*/
+/**
+ * 5 => 1
+ * 6 => 3
+ * 7 => 4
+ * 8 => 8
+ * 9 => 2
+ * 12 => 1
+ * 
+ * T14(r) = 1 + 3r(4 + 8 + 2) + 1
+ * T14(r) = 1r(1) + 2
+ * T14(r) = r + 1 
+ * O(r) = r
+ */

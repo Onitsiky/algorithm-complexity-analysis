@@ -11,3 +11,13 @@ const areSimilar = (a, b) => {
   }
   return arr.length < 5 && new Set(arr).size < 3;
 };
+/**
+ * 7 => 5 * i
+ * 8 => 3
+ * 9 => 2
+ * 12 => 3 + n
+ * T04(n) = 5 * i + 3 + 2 + 3 + n 
+ * T04(n) = 8 + 6n
+ * T04(n) = n + 1 
+ * O = n
+ */
